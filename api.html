@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hellko
+    <script>
+        const API_KEY="49818da7c57da86918605e2e0d3f2cee";
+        async function show()
+         {
+        let city="abdc";
+            // const API_KEY="49818da7c57da86918605e2e0d3f2cee";
+            const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+            const data=await response.json();
+            console.log("weather data",data);
+         }
+         console.log("weather data");
+        console.log("helllo");
+    </script>
+</body>
+</html>
